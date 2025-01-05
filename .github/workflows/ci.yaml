@@ -36,7 +36,7 @@ jobs:
           python train.py  # Train the machine learning model (assuming you have a train.py script)
 
       - name: Upload Model (Optional)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Updated to v3
         with:
           name: iris-model
           path: model.pkl  # Assuming the trained model is saved as 'model.pkl'
