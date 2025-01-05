@@ -1,7 +1,7 @@
 # src/train.py
 import pickle
 from sklearn.linear_model import LogisticRegression
-from preprocess import load_and_split_data
+from src.preprocess import load_and_split_data
 
 def train_model():
     X_train, X_test, y_train, y_test = load_and_split_data()
